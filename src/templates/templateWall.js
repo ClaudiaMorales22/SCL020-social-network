@@ -1,6 +1,6 @@
 import {
   creatingNewPost,
-  updatingPublications /*, editingPublication */,
+  updatingPublications /* , editingPublication */,
   deletingPublication,
   getPublication,
   editingComment,
@@ -90,22 +90,23 @@ export const wall = () => {
         });
       });
 
-      /*const btnLikes = container.querySelectorAll('.btn-like');
+      /* const btnLikes = container.querySelectorAll('.btn-like');
     btnLikes.forEach(btn => {
       btn.addEventListener('click', ({target: {dataset}}) => {
         btn.classList.add('liked');
         addLike(dataset.id);
         console.log('jelou')
       })
-    })*/
-      //Mostrar el comentario de la publicación
-      //Usuario pueda dar click en el boton y que se muestre en el text area y se oculte el comment
-      //Crear boton para guardar cambios
-      //Usuario puede editar texto
-      //Dar click al boton de guardar cambios
-      //Esconder text area y boton para guardar cambios
-      //Ejecutar funcion UpdateDoc Firestore
-      //Refrescar vista de publicacion con nuevo Comment de Firestore ( ver si onSnapshot actualiza el nuevo comment)
+    }) */
+      // Mostrar el comentario de la publicación
+      // Usuario pueda dar click en el boton y que se muestre en el text area y se oculte el comment
+      // Crear boton para guardar cambios
+      // Usuario puede editar texto
+      // Dar click al boton de guardar cambios
+      // Esconder text area y boton para guardar cambios
+      // Ejecutar funcion UpdateDoc Firestore
+      // Refrescar vista de publicacion con nuevo Comment de Firestore
+      // ( ver si onSnapshot actualiza el nuevo comment)
       const btnEdit = container.querySelectorAll(".btn-edit");
       btnEdit.forEach((btn) => {
         btn.addEventListener("click", async (e) => {
@@ -124,8 +125,7 @@ export const wall = () => {
           const saveChanges = document.createElement('button');
           saveChanges.classList.add('save-changes-btn');
           saveChanges.textContent = 'Guardar';
-          postEl.appendChild(saveChanges);
-          editingComment(id, editingAreaEl.value)
+          postEl.appendChild(saveChanges);          
         });
       });
     });

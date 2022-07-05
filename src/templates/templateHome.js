@@ -6,6 +6,7 @@ export const home = () => {
   const viewHome = // html
   `
     <div class="firstView">
+      <img class = "homePic" src = "Social-images/homePic.png">
     <div class = "logo">
       <img src = "Social-images/logoNuevo.png">
     </div>
